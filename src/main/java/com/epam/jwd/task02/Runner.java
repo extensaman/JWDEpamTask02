@@ -1,12 +1,14 @@
 package com.epam.jwd.task02;
 
+import com.epam.jwd.task02.controller.TextController;
+
 /**
  * Information handling
  * Develop an application that parses and processes text.
- *
+ * <p>
  * You need to create an application that parses text from a programming textbook from a file
  * and allowing you to perform three different operations on text.
- *
+ * <p>
  * General requirements for the project:
  * - The parsed text should be represented as an object (text) containing,
  * for example, sentences and code blocks, a sentence can contain the words of the sentence.
@@ -29,7 +31,7 @@ package com.epam.jwd.task02;
  * logger Log4j.
  * - The created application should allow the implementation of a group of tasks for working on
  * text (tasks are given below) without “rewriting” existing code.
- *
+ * <p>
  * 1. Find the largest number of text sentences that have the same
  * words.
  * 2. Display all sentences of the given text in ascending order
@@ -69,6 +71,7 @@ package com.epam.jwd.task02;
 
 public class Runner {
     public static void main(String[] args) {
-
+        TextController controller = new TextController();
+        controller.execute();
     }
 }
