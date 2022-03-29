@@ -9,10 +9,14 @@ public class TextServiceProvider {
 
     private static class SingletonHolder {
         private static final TextServiceProvider INSTANCE = new TextServiceProvider();
+
+        public static TextServiceProvider getInstance() {
+            return INSTANCE;
+        }
     }
 
     public static TextServiceProvider getInstance() {
-        return SingletonHolder.INSTANCE;
+        return SingletonHolder.getInstance();
     }
 
     public TextService getTextService() {

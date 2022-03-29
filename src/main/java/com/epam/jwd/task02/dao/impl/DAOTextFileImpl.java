@@ -14,27 +14,28 @@ import java.io.IOException;
 
 public class DAOTextFileImpl implements DAOText {
     private static final Logger logger = LogManager.getLogger(DAOTextFileImpl.class);
+
     @Override
     public String readText(String filePath) throws DAOTextException {
         StringBuilder builder = new StringBuilder();
-        try(BufferedReader reader = new BufferedReader(new FileReader(new File(filePath)))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(new File(filePath)))) {
             while (reader.ready()) {
-                builder.append((char)reader.read());
+                builder.append((char) reader.read());
             }
         } catch (IOException e) {
             throw new DAOTextException(e);
         }
-        logger.trace("Text reading from file " + filePath + " completed");
+        logger.trace("Text reading from file '" + filePath + "' completed");
         return builder.toString();
     }
 
     @Override
     public void writeText(String filePath, String text) throws DAOTextException {
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter(new File(filePath)))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(new File(filePath)))) {
             writer.write(text);
         } catch (IOException e) {
             throw new DAOTextException(e);
         }
-        logger.trace("Text writting to file " + filePath + " completed");
+        logger.trace("Text writting to file '" + filePath + "' completed");
     }
 }

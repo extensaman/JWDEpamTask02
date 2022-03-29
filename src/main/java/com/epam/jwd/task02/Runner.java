@@ -55,7 +55,7 @@ import com.epam.jwd.task02.controller.TextController;
  * descending total number of occurrences.
  * 11. In each sentence of the text, exclude a substring of the maximum length,
  * starting and ending with the given characters.
- * 12. From the text, remove all words of a given length that begin with a consonant.
+ * 12. Remove all words of a given length that begin with a consonant.
  * 13. Sort the words in the text in descending order of the number of occurrences of a given
  * symbol, and in case of equality - alphabetically.
  * 14. In the given text, find a substring of maximum length that is
@@ -71,7 +71,6 @@ import com.epam.jwd.task02.controller.TextController;
 
 public class Runner {
     public static void main(String[] args) {
-        TextController controller = new TextController();
-        controller.execute();
+        TextController.getInstance().execute();
     }
 }

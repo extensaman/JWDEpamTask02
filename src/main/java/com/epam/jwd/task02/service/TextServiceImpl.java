@@ -3,8 +3,11 @@ package com.epam.jwd.task02.service;
 import com.epam.jwd.task02.dao.DAOTextException;
 import com.epam.jwd.task02.dao.DAOTextProvider;
 import com.epam.jwd.task02.entity.CompositeTextComponent;
+import com.epam.jwd.task02.entity.ElementaryTextComponent;
 import com.epam.jwd.task02.service.parser.Parser;
 import com.epam.jwd.task02.service.parser.ParserImpl;
+import com.epam.jwd.task02.service.util.GivenLetterCountComparator;
+import com.epam.jwd.task02.service.util.VowelLetterProportionComparator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -17,6 +20,7 @@ public class TextServiceImpl implements TextService {
     public static final String WORD_REGEX = "(?<= )";
     public static final String SENTENCE_REGEX = "(?<=[\\.\\?\\!]\\s)";
     public static final String PARAGRAPH_REGEX = "(?m)(?=^\\s{0})";
+    public static final String BEGIN_FROM_CONSONANT_REGEX = "^[bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ].+";
 
     @Override
     public String readText(String filePath) throws TextServiceException {
@@ -58,5 +62,49 @@ public class TextServiceImpl implements TextService {
         } catch (DAOTextException | NoSuchElementException e) {
             throw new TextServiceException(e);
         }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public CompositeTextComponent sortByGivenLetter(CompositeTextComponent composite, int letter) {
+        CompositeTextComponent newComposite = new CompositeTextComponent();
+        Optional.ofNullable(composite)
+                .ifPresent(c -> c.getListRepresentation()
+                        .stream()
+                        .sorted(new GivenLetterCountComparator(letter))
+                        .forEach(s -> newComposite.addComponent(new ElementaryTextComponent(s))));
+        logger.trace("Composite is sorted by count of letter '" + (char) letter + '\'');
+        return newComposite;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public CompositeTextComponent removeByGivenLengthAndBegunConsonant(CompositeTextComponent composite, int length) {
+        CompositeTextComponent newComposite = new CompositeTextComponent();
+        Optional.ofNullable(composite)
+                .ifPresent(c -> c.getListRepresentation()
+                        .stream()
+                        .filter(s -> !(s.length() == length && s.matches(BEGIN_FROM_CONSONANT_REGEX)))
+                        .forEach(s -> newComposite.addComponent(new ElementaryTextComponent(s))));
+        logger.trace("Removing all words of the length = " + length + " and that begin with a consonant is completed");
+        return newComposite;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public CompositeTextComponent sortByVowelLetterProportion(CompositeTextComponent composite) {
+        CompositeTextComponent newComposite = new CompositeTextComponent();
+        Optional.of(composite).ifPresent(c -> c.getListRepresentation()
+                .stream()
+                .sorted(new VowelLetterProportionComparator())
+                .forEach(s -> newComposite.addComponent(new ElementaryTextComponent(s))));
+        logger.trace("Composite is sorted by ascending proportion of vowels in word");
+        return newComposite;
     }
 }

@@ -1,7 +1,10 @@
 package com.epam.jwd.task02.entity;
 
-public class ElementaryTextComponent implements TextComponent{
-    private String component;
+import java.util.Collections;
+import java.util.List;
+
+public class ElementaryTextComponent implements TextComponent {
+    private final String component;
 
     public ElementaryTextComponent(String component) {
         this.component = component;
@@ -15,5 +18,10 @@ public class ElementaryTextComponent implements TextComponent{
     @Override
     public String getStringInBraceRepresentation() {
         return '{' + component + '}';
+    }
+
+    @Override
+    public List<String> getListRepresentation() {
+        return Collections.singletonList(component);
     }
 }

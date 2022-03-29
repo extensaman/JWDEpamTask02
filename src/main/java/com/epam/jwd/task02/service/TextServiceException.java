@@ -1,6 +1,6 @@
 package com.epam.jwd.task02.service;
 
-public class TextServiceException extends Exception{
+public class TextServiceException extends Exception {
     public TextServiceException() {
     }
 

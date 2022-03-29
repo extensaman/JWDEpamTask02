@@ -1,0 +1,52 @@
+{1. }{ }{1.1. }{ }{{
+}{ }{ }{ }{ }{// }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{// }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{}
+}{}
+}{
+}{{
+}{ }{ }{ }{ }{// }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{}
+}{
+}{1.2. }{ }{
+}{{
+}{ }{ }{ }{ }{{
+}{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{} }{{
+}{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{}
+}{}
+}{90% }{B }{80% }{
+}{
+}{{
+}{ }{ }{ }{ }{{
+}{
+}{ }{ }{ }{ }{ }{ }{ }{ }{= }{76;
+}{ }{ }{ }{ }{ }{ }{ }{ }{
+}{ }{ }{ }{ }{ }{ }{ }{ }{>= }{90) }{{
+}{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{= }{ }{ }{ }{ }{ }{ }{ }{ }{} }{>= }{80) }{{
+}{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{= }{'B';
+}{ }{ }{ }{ }{ }{ }{ }{ }{} }{>= }{70) }{{
+}{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{= }{'C';
+}{ }{ }{ }{ }{ }{ }{ }{ }{} }{>= }{60) }{{
+}{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{= }{'D';
+}{ }{ }{ }{ }{ }{ }{ }{ }{} }{{
+}{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }{= }{'F';
+}{ }{ }{ }{ }{ }{ }{ }{ }{}
+}{ }{ }{ }{ }{ }{ }{ }{ }{= }{" }{+ }{ }{ }{ }{ }{}
+}{}
+}{ }{ }{ }{ }{= }{C
+}{76 }{>= }{70 }{76 }{>= }{60. }{= }{'C';) }{"then" }{"then" }{"then" }{stopped!");
+}{tells }{class }{jumps }{catch }{wrong }{print }{class }{args) }{'A';
+}{most }{flow }{test }{follows:
+}{"if" }{must }{this }{test }{that }{that }{when }{them }{this }{sort }{just }{path }{when }{"if" }{when }{this }{that }{test }{char }{from }{is:
+}{that }{than }{System.err.println("The }{main(String[] }{brittle. }{results.}{stopped.}{program, }{grade);
+}{(isMoving){
+}{currentSpeed--;
+}{currentSpeed--;
+}{currentSpeed--;
+}{The }{if-then }{and }{Statements
+}{The }{if-then }{The }{if-then }{the }{all }{the }{control }{statements. }{program }{For }{the }{the }{the }{the }{the }{the }{moving
+}{the }{current }{the }{not }{control }{the }{end }{the }{if-then }{the }{and }{closing }{the }{statement:
+}{but }{braces
+}{(isMoving)
+}{the }{can }{the }{the }{add }{the }{braces. }{The }{get }{the }{The }{The }{the }{the }{the }{not }{the }{stating }{the }{has }{has }{The }{assigns }{the }{for }{for }{and }{on.}{int }{grade;
+}{The }{the }{program }{the }{can }{the }{and }{the }{and }{the }{not }{System.out.println("Grade }{Statement
+}{statement.}{forgetting }{Statement
+}{(isMoving) }{(testscore }{(testscore }{(testscore }{(testscore }{statement: }{statements }{brakes }{method }{applyBrakes() }{speed
+}{braces }{applyBrakes() }{braces }{matter }{taste. }{second }{common }{cannot }{error; }{false. }{method }{brakes }{simply }{applyBrakes() }{score: }{public }{static }{(grade }{statement }{bicycle's }{statement }{statement }{statement }{following }{testscore }{testscore }{if-then-else }{if-then-else }{if-then-else }{if-then-else }{is }{basic }{of }{It }{to }{of }{if }{to }{true. }{example, }{could }{allow }{to }{speed }{if }{is }{in }{possible }{of }{applyBrakes }{could }{be }{as }{be }{if }{If }{to }{false }{(meaning }{is }{in }{motion), }{to }{of }{In }{provided }{contains }{as }{if }{Deciding }{to }{is }{of }{personal }{Omitting }{If }{is }{later }{added }{to }{would }{be }{to }{newly }{compiler }{of }{provides }{of }{an }{to }{could }{an }{in }{applyBrakes }{to }{if }{is }{in }{In }{case, }{is }{to }{an }{error }{if }{grade }{based }{on }{of }{an }{score }{of }{or }{score }{of }{or }{so }{if }{grade }{if }{grade }{if }{grade }{if }{grade }{grade }{Grade }{of }{in }{compound }{However, }{is }{particular }{expression }{satisfied, }{conditions }{certain }{section }{Bicycle }{bicycle }{motion. }{clause: }{bicycle }{clause: }{bicycle }{opening }{without }{clause, }{mistake }{applied }{bicycle }{motion. }{message }{bicycle }{bicycle }{noticed }{satisfy }{code }{only }{only }{implementation }{void }{addition, }{optional, }{only }{void }{same }{omit }{make }{code }{more }{secondary }{take }{some }{void }{else }{void }{else }{else }{else }{else }{have }{more }{once }{condition }{remaining }{IfElseDemo, }{appropriate }{clause }{above, }{you'll }{clause }{action }{action }{above, }{above, }{output }{decrease }{decrease }{required }{executed }{IfElseDemo }{execute }{a }{a }{evaluates }{already }{One }{evaluates }{are }{one }{a }{a }{a }{a }{execution }{evaluates }{use }{are }{already }{already }{a }{value }{a }{A }{a }{a }{a }{may }{value }{one }{a }{are }{are }{evaluated.}{your }{You }{You }

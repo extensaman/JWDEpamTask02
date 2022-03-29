@@ -1,6 +1,6 @@
 package com.epam.jwd.task02.dao;
 
-public class DAOTextException extends Exception{
+public class DAOTextException extends Exception {
     public DAOTextException() {
     }
 

@@ -4,7 +4,10 @@ import com.epam.jwd.task02.dao.impl.DAOTextFileImpl;
 
 public class DAOTextProvider {
     private static final DAOTextProvider INSTANCE = new DAOTextProvider();
-    private DAOTextProvider(){}
+
+    private DAOTextProvider() {
+    }
+
     public static DAOTextProvider getInstance() {
         return INSTANCE;
     }
